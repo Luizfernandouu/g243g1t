@@ -1,3 +1,3 @@
 function aperta(){
-    alert("oi,mané!");
+    alert("oi, mané!");
 }
