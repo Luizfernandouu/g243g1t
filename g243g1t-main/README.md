@@ -1,1 +1,0 @@
-# luiz fernando - 38 e arthur - 02.
