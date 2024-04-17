@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="./script/script.js"></script>
     <link rel="stylesheet" href="./style/base.css">
+    <script src="./script/estruturas.js"></script>
 </head>
 <body>
     <header class="barra">
@@ -14,30 +15,57 @@
         <span class="desktop">Desktop</span>
     </header>
     <section class="conteudo">
-        <div class="botoes">
-            <button id="aba1" class="btn" onclick="abrir(1)">aba 1</button>
-            <button id="aba2" class="btn" onclick="abrir(2)">aba 2</button>
-            <button id="aba3" class="btn" onclick="abrir(3)">aba 3</button>
-            <button id="aba4" class="btn" onclick="abrir(4)">aba 4</button>
-            <button id="aba5" class="btn" onclick="abrir(5)">aba 5</button>
+        <div class="sorteio">
+            
+         <section class="conteudo">
+            <div class="botoes">
+                <button id="aba1" class="btn" onclick="abrir(1)">Aba 1</button>
+                <button id="aba2" class="btn" onclick="abrir(2)">Aba 2</button>
+                <button id="aba3" class="btn" onclick="abrir(3)">Aba 3</button>
+                <button id="aba4" class="btn" onclick="abrir(4)">Aba 4</button>
+                <button id="aba5" class="btn" onclick="abrir(5)">Aba 5</button>
+            </div>
+
+            <div class="divisoes">
+                
+
             </div>
             <div class="abas">
                 <div id="a1" class="aba1">
-                   <span id="h"></span>
+                    <div class="abageral aba1" id="ab1">
+                        <span id="h"></span>
+                    </div>
                 </div>
-            <div id="a2" class="aba2">
-                contar de: <input type="number" id="inicio">
-                ate: <input type="number" id="fim"><br>
-                <button onclick="iniciarContagem()">contar</button> <br>
-                <span id="valor"></span>
-            </div>
-                
-            <div id="a3" class="aba3">estou na aba 3</div>
-                <div id="a4" class="aba4">estou na aba 4</div>
-                <div id="a5" class="aba5">estou na aba 5</div>
+                <div id="a2" class="aba2">
+                    Contar de: <input type="number" id="inicio">
+                    até: <input type="number" id="fim"><br>
+                    <button onclick="iniciarContagem()">Contar</button><br>
+                    <span id="valor"></span>
+                </div>
+                <div id="a3" class="aba3">
+                    <h3>Alarme</h3>
+                    <input type="number" id="hd" max="23" min="0" class="desp">
+                    <input type="number" id="md" max="59" min="0" class="desp">
+                    <input type="number" id="sd" max="59" min="0" class="desp">
+                    <br><br>
+                    <button onclick="ligar_alarme()">Ligar Alarme</button>
+                </div>
+                <div id="a4" class="aba4">
+                    <div class="minha_fila"><span id="fil">Não tem fila</span></div>
+                    <div class="operações fila">
+                    <button onclick="criarFila()">Criar fila</button><br>
+                    <button onclick="removerFila()">Remover fila</button><br>
 
+                    <div class="adicionar_fila">
+                        nome: <input type="text" id="nome"><button onclick="inserirElementoFila()">inserir na fila</button>               
+                         </div>
+                  </div>
+                <div id="a5" class="aba5">Estou na aba 5</div>
             </div>
-            
+
+         </section>
+
+        </div>
     </section>
 </body>
 </html>
